@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.utng.app.yacalu"
+    >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Yacalu"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:versionCode= "1"
+        android:versionName ="1.0"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".IntroductionActivity" />
+        <activity android:name=".MemoActivity" />
+        <activity android:name=".GameComplementationActivity" />
+        <activity
+            android:name=".ListAdjectivesActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".CondicionalsActivity" />
+        <activity android:name=".BusinessEnglishActivity" />
+        <activity android:name=".TipsActivity" />
+        <activity android:name=".VerbsListActivity" />
+        <activity android:name=".EntryActivity" />
+        <activity android:name=".BedActivity" />
+        <activity android:name=".BucketActivity" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".CelphoneActivity" />
+        <activity android:name=".ChairActivity" />
+        <activity android:name=".ComputerActivity" />
+        <activity android:name=".DiceActivity" />
+        <activity android:name=".GlassesActivity" />
+        <activity android:name=".KeysActivity" />
+        <activity android:name=".LampActivity" />
+        <activity android:name=".LanternActivity" />
+        <activity android:name=".PencilActivity" />
+        <activity android:name=".TableActivity" />
+        <activity android:name=".TypewriterActivity" />
+        <activity android:name=".ProcesoConecActivity" />
+        <activity android:name=".MenuConecActivity" />
+        <activity android:name=".ConclusiveConnectorsActivity" />
+        <activity android:name=".ContinuativesConnectorsActivity" />
+        <activity android:name=".AdversativesConnectorsActivity" />
+        <activity android:name=".WellcomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainVocabularyActivity" />
+        <activity android:name=".VocabularyActivity" />
+        <activity
+            android:name=".NewListAdjectActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".BusinessTips1Activity" />
+        <activity android:name=".BusinessTips2Activity" />
+        <activity android:name=".BusinessTips3Activity" />
+        <activity android:name=".BusinessTips4Activity" />
+        <activity android:name=".BusinessTips5Activity" />
+        <activity android:name=".BusinessTips6Activity" />
+        <activity android:name=".Sentence4Activity" />
+        <activity android:name=".Sentence5Activity" />
+        <activity android:name=".Sentence6Activity" />
+        <activity android:name=".Sentence7Activity" />
+        <activity android:name=".Sentence8Activity" />
+        <activity android:name=".Sentence2Activity" />
+        <activity android:name=".Sentence3Activity" />
+        <activity
+            android:name=".ConectorsPracticActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".CompletarFrasesActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".GrammarActivity" />
+        <activity android:name=".CreditsActivity" />
+        <activity android:name=".FigureActivity" />
+        <activity android:name=".CircleActivity" />
+        <activity android:name=".DiamondActivity" />
+        <activity android:name=".RectangleActivity" />
+        <activity android:name=".SquareActivity" />
+        <activity android:name=".TriangleActivity" />
+        <activity android:name=".FacebookActivity" />
+        <activity android:name=".YoutubeActivity" />
+        <activity android:name=".MusicUrlActivity"></activity>
+    </application>
+
+</manifest>

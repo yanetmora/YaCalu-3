@@ -1,5 +1,6 @@
 package org.utng.app.yacalu.vocabulary;
 
+
 import android.content.ClipData;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -7,12 +8,10 @@ import android.view.DragEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
+import android.support.v7.app.AppCompatActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.os.Bundle;
 
 public class VocabularyActivity extends AppCompatActivity {
 
@@ -128,7 +127,7 @@ public class VocabularyActivity extends AppCompatActivity {
             final View view =(View)event.getLocalState();
             switch (dragEvent){
                 case DragEvent.ACTION_DROP:
-                    if (view.getId() == R.id.btn_party && v.getId()==R.id.ll_par){
+                    if (view.getId() == R.id.iv_party_one && v.getId()==R.id.ll_party){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;
@@ -137,7 +136,7 @@ public class VocabularyActivity extends AppCompatActivity {
 
                         mediaParty.start();
 
-                    }else if (view.getId() == R.id.btn_ask && v.getId()==R.id.ll_as){
+                    }else if (view.getId() == R.id.iv_ask_one && v.getId()==R.id.ll_ask){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;
@@ -146,7 +145,7 @@ public class VocabularyActivity extends AppCompatActivity {
 
                         mediaAsk.start();
 
-                    }else if (view.getId()==R.id.btn_web && v.getId()==R.id.ll){
+                    }else if (view.getId()==R.id.iv_web_one && v.getId()==R.id.ll_web){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;
@@ -155,7 +154,7 @@ public class VocabularyActivity extends AppCompatActivity {
 
                         mediaWeb.start();
 
-                    }else if (view.getId()==R.id.btn_throttle && v.getId()==R.id.ll_acel){
+                    }else if (view.getId()==R.id.iv_throttle_one && v.getId()==R.id.ll_throttle){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;
@@ -164,7 +163,7 @@ public class VocabularyActivity extends AppCompatActivity {
 
                         mediaThrottle.start();
 
-                    }else if (view.getId()==R.id.btn_luggage && v.getId()==R.id.lug){
+                    }else if (view.getId()==R.id.iv_luggage_one&& v.getId()==R.id.ll_lugga){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;
@@ -173,7 +172,7 @@ public class VocabularyActivity extends AppCompatActivity {
 
                         mediaLuggage.start();
 
-                    }else if (view.getId()==R.id.btn_keyboard && v.getId()==R.id.ll_key){
+                    }else if (view.getId()==R.id.iv_keyboard_one && v.getId()==R.id.ll_key){
                         LinearLayout oldParent = (LinearLayout) view.getParent();
                         oldParent.removeView(view);
                         LinearLayout newParent = (LinearLayout)v;

@@ -8,13 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class BucketActivity extends AppCompatActivity implements View.OnClickListener{
     private ImageButton btnBucket;
@@ -43,7 +41,7 @@ public class BucketActivity extends AppCompatActivity implements View.OnClickLis
 
         soundPool = new SoundPool(8, AudioManager.STREAM_MUSIC,0);
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        bucket = soundPool.load(this, R.raw.bed,1);
+        bucket = soundPool.load(this, R.raw.bucket,1);
         mediaPlayer = new MediaPlayer();
 
     }

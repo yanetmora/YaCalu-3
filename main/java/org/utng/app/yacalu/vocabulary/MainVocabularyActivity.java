@@ -1,5 +1,7 @@
 package org.utng.app.yacalu.vocabulary;
 
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -7,9 +9,9 @@ import android.widget.ImageButton;
 
 import org.utng.app.yacalu.*;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class MainVocabularyActivity extends AppCompatActivity implements View.OnClickListener{
     private ImageButton ibtIniciar;
@@ -24,7 +26,7 @@ public class MainVocabularyActivity extends AppCompatActivity implements View.On
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(this, org.utng.app.yacalu.VocabularyActivity.class);
+        Intent i = new Intent(this, org.utng.app.yacalu.vocabulary.VocabularyActivity.class);
         startActivity(i);
     }
 }

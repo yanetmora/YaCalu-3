@@ -1,5 +1,6 @@
 package org.utng.app.yacalu.objects;
 
+
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,10 +12,8 @@ import android.widget.ImageButton;
 
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
-
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class KeysActivity extends AppCompatActivity implements View.OnClickListener{
     private ImageButton btnKey;
@@ -42,18 +41,18 @@ public class KeysActivity extends AppCompatActivity implements View.OnClickListe
 
         soundPool = new SoundPool(8, AudioManager.STREAM_MUSIC,0);
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        keys = soundPool.load(this, R.raw.bed,1);
+        keys = soundPool.load(this, R.raw.keys,1);
         mediaPlayer = new MediaPlayer();
 
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_camera:
+            case R.id.btn_keys:
                 soundPool.play(keys, 1, 1,0,0,1);
                 break;
             case R.id.btn_next:
-                Intent i = new Intent(this, LampActivity.class);
+                Intent i = new Intent(this, LamActivity.class);
                 startActivity(i);
                 finish();
                 break;

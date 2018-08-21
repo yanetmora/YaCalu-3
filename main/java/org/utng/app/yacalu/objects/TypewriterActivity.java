@@ -12,9 +12,8 @@ import android.widget.ImageButton;
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class TypewriterActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -71,4 +70,3 @@ public class TypewriterActivity extends AppCompatActivity implements View.OnClic
     }
 
 }
-

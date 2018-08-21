@@ -1,5 +1,6 @@
 package org.utng.app.yacalu.objects;
 
+
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -10,16 +11,14 @@ import android.widget.ImageView;
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.support.v7.app.AppCompatActivity;
 
-public class EntryActivity extends AppCompatActivity implements View.OnClickListener{
-    private Button btnNext;
-    private ImageView btnObjets;
+public class  EntryActivity extends AppCompatActivity implements View.OnClickListener{
+private Button btnNext;
+private ImageView btnObjets;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_entry);
@@ -28,22 +27,22 @@ public class EntryActivity extends AppCompatActivity implements View.OnClickList
         btnObjets = (ImageView)findViewById(R.id.btn_objets);
         btnNext.setOnClickListener(this);
 
-    }
+        }
 
 
-    @Override
-    public void onClick(View v) {
+@Override
+public void onClick(View v) {
         Intent i = new Intent(this, BedActivity.class );
         startActivity(i);
 
-    }
-    @Override
-    public void onBackPressed() {
+        }
+@Override
+public void onBackPressed() {
         Intent i = new Intent(this, MenuActivity.class);
         startActivity(i);
         finish();
-    }
+        }
 
-}
+        }
 
 

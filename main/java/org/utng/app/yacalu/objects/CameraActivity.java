@@ -12,9 +12,10 @@ import android.widget.ImageButton;
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class CameraActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -31,8 +32,8 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_camera);
 
         btnCamera = (ImageButton) findViewById(R.id.btn_camera);
-        btnNext = (Button) findViewById(R.id.btn_nextcame);
-        btnPrevious = (Button) findViewById(R.id.btn_previouscame);
+        btnNext = (Button) findViewById(R.id.btn_next);
+        btnPrevious = (Button) findViewById(R.id.btn_previous);
 
 
         btnCamera.setOnClickListener(this);
@@ -41,7 +42,7 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
 
         soundPool = new SoundPool(8, AudioManager.STREAM_MUSIC,0);
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        camera = soundPool.load(this, R.raw.bed,1);
+        camera = soundPool.load(this, R.raw.camera,1);
         mediaPlayer = new MediaPlayer();
 
     }
@@ -51,12 +52,12 @@ public class CameraActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_camera:
                 soundPool.play(camera, 1, 1,0,0,1);
                 break;
-            case R.id.btn_nextcame:
+            case R.id.btn_next:
                 Intent i = new Intent(this, CelphoneActivity.class);
                 startActivity(i);
                 finish();
                 break;
-            case R.id.btn_previouscame:
+            case R.id.btn_previous:
                 Intent in = new Intent(this, BucketActivity.class);
                 startActivity(in);
                 finish();

@@ -1,5 +1,7 @@
 package org.utng.app.yacalu.objects;
 
+
+
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,10 +13,9 @@ import android.widget.ImageButton;
 
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-/**
- * Created by yanet on 20/08/2018.
- */
 
 public class LanternActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -58,7 +59,7 @@ public class LanternActivity extends AppCompatActivity implements View.OnClickLi
                 finish();
                 break;
             case R.id.btn_previous:
-                Intent in = new Intent(this, LampActivity.class);
+                Intent in = new Intent(this, LamActivity.class);
                 startActivity(in);
                 finish();
                 break;

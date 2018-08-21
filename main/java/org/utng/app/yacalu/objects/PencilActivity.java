@@ -1,5 +1,6 @@
 package org.utng.app.yacalu.objects;
 
+
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -12,9 +13,8 @@ import android.widget.ImageButton;
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class PencilActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -77,4 +77,3 @@ public class PencilActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 }
-

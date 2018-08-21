@@ -12,11 +12,11 @@ import android.widget.ImageButton;
 import org.utng.app.yacalu.MenuActivity;
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
 
-public class CelphoneActivity extends AppCompatActivity implements View.OnClickListener{
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class CelphoneActivity extends  AppCompatActivity implements View.OnClickListener{
     private ImageButton btnCelphone;
     private Button btnNext;
     private Button btnPrevious;
@@ -43,7 +43,7 @@ public class CelphoneActivity extends AppCompatActivity implements View.OnClickL
 
         soundPool = new SoundPool(8, AudioManager.STREAM_MUSIC,0);
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        celphone = soundPool.load(this, R.raw.bed,1);
+        celphone = soundPool.load(this, R.raw.celphone,1);
         mediaPlayer = new MediaPlayer();
 
     }

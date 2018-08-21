@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import org.utng.app.yacalu.figuresGeometric.FigureActivity;
+import org.utng.app.yacalu.objects.EntryActivity;
+import org.utng.app.yacalu.vocabulary.MainVocabularyActivity;
+
 
 public class MenuActivity extends AppCompatActivity {
 

@@ -1,5 +1,8 @@
 package org.utng.app.yacalu.figuresGeometric;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -11,25 +14,22 @@ import android.widget.ImageButton;
 
 import org.utng.app.yacalu.R;
 
-/**
- * Created by yanet on 20/08/2018.
- */
 
 public class RectangleActivity extends AppCompatActivity implements View.OnClickListener{
 
 
 
-    private ImageButton btnRectangle;
-    private Button btnNext;
-    private Button btnPrevious;
-    private MediaPlayer mediaPlayer;
-    private SoundPool soundPool;
-    private int rectangle;
+private ImageButton btnRectangle;
+private Button btnNext;
+private Button btnPrevious;
+private MediaPlayer mediaPlayer;
+private SoundPool soundPool;
+private int rectangle;
 
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rectangle);
 
@@ -47,29 +47,29 @@ public class RectangleActivity extends AppCompatActivity implements View.OnClick
         rectangle = soundPool.load(this, R.raw.rectangle,1);
         mediaPlayer = new MediaPlayer();
 
-    }
-    @Override
-    public void onClick(View v) {
+        }
+@Override
+public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btn_rectangle:
-                soundPool.play(rectangle, 1, 1,0,0,1);
-                break;
-            case R.id.btn_next:
-                Intent i = new Intent(this,TriangleActivity.class);
-                startActivity(i);
-                finish();
-                break;
-            case R.id.btn_previous:
-                Intent in = new Intent(this, DiamondActivity.class);
-                startActivity(in);
-                finish();
-                break;
-            default:
-                break;
+        case R.id.btn_rectangle:
+        soundPool.play(rectangle, 1, 1,0,0,1);
+        break;
+        case R.id.btn_next:
+        Intent i = new Intent(this,TriangleActivity.class);
+        startActivity(i);
+        finish();
+        break;
+        case R.id.btn_previous:
+        Intent in = new Intent(this, DiamondActivity.class);
+        startActivity(in);
+        finish();
+        break;
+default:
+        break;
 
 
         }
-    }
+        }
 
 
-}
+        }
